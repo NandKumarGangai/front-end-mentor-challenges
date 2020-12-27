@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+:root {
+    --red: hsl(0, 100%, 74%);
+    --green: hsl(154, 59%, 51%);
+    --blue: hsl(248, 32%, 49%);
+    --darkBlue: hsl(249, 10%, 26%);
+    --rayishBlue: hsl(246, 25%, 77%);
+    --white: #faf6f6;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.p-1 {
+    padding: 1rem;
+}
+
+.pb-0 {
+    padding-bottom: 0;
+}
+
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.height-full {
+    height: 100vh;
+}
+
+.wrapper {
+    background-image: url('./images/bg-intro-desktop.png');
+    background-color: var(--red);
+    height: 100vh;
+}
+
+.container {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    color: var(--white);
+    width: 100%;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    padding: 12rem;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.info > h1 {
+    font-size: 3rem;
+}
+
+.form {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.offer-card {
+    text-align: center;
+    background-color: var(--blue);
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px 0px var(--darkBlue);
+}
+
+.form-wrapper {
+    border-radius: 10px;
+    background-color: var(--white);
+    color: black;
+    box-shadow: 0px 5px 5px 0px var(--darkBlue);
+}
+
+.form-elements {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.form-elements input {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    border-radius: 5px;
+    border: 0.5px solid rgb(146, 144, 144);
+}
+
+.form-elements > button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background: var(--green);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.tnc-text {
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.tnc {
+    color: var(--red);
+}
+
+footer {
+    color: var(--white);
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    bottom: 10px;
+}
+
+small {
+    color: var(--red);
+    text-align: end;
+    display: none;
+}
+
+.display-inline {
+    display: inline;
+}
+
+.error {
+    border: 0.5px solid var(--red) !important;
+}
+
+@media screen and (max-width: 375px) {
+
+    .wrapper {
+        background-image: url('./images/bg-intro-mobile.png');
+        max-width: 100%;
+        height: auto;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .form {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .info {
+        width: 100%;
+        text-align: center;
+        padding: 2rem 1rem;
+    }
+
+    .info > h1 {
+        font-size: 2rem;
+    }
+
+    footer {
+        position: static;
+    }
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Intro component with sign up form</title>
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <main class="container">
+      <div class="info p-1 height-full">
+        <h1 class="p-1">Learn to code by watching others</h1>
+        <p class="p-1">
+          See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+          but understanding how developers think is invaluable.
+        </p>
+      </div>
+      <div class="form p-1 height-full">
+        <div class="offer-card p-1">
+          <strong>Try it free 7 days</strong> then $20/mo. thereafter
+        </div>
+        <div class="form-wrapper mt-1">
+          <form>
+          <div class="form-elements">
+              <input class="p-1 mt-1" type="text" name="firstName" id="firstName" placeholder="First Name " autocomplete="off">
+              <small id="firstNameErr">First Name cannot be empty</small>
+              <input class="p-1 mt-1" type="text" name="lastName" id="lastName" placeholder="Last Name " autocomplete="off">
+              <small id="lastNameErr">Last Name cannot be empty</small>
+              <input class="p-1 mt-1" type="email" name="email" id="email" placeholder="Email Address" autocomplete="off">
+              <small id="emailErr">Looks like this is not an email</small>
+              <input class="p-1 mt-1" type="password" name="password" id="password" placeholder="Password" autocomplete="off">
+              <small id="passwordErr">Password cannot be empty</small>
+              <button class="p-1 mt-1" type="button" id="claimBtn">Claim your free trial</button>
+              <p class="tnc-text mt-1">By clicking the button, you are agreeing to our <span class="tnc">Terms and
+                  Services</span></p>
+                </div>
+              </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Nandkumar Gangai</a>.
+      </p>
+    </footer>
+    <script src="./app.js"></script>
+  </div>
+</body>
+
+</html>
