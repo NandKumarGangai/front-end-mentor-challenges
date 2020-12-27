@@ -39,14 +39,26 @@
         <div class="form-wrapper mt-1">
           <form>
           <div class="form-elements">
+            <div class="input-wrapper">
               <input class="p-1 mt-1" type="text" name="firstName" id="firstName" placeholder="First Name " autocomplete="off">
+              <i id="firstNameErrIcon"></i>
               <small id="firstNameErr">First Name cannot be empty</small>
+            </div>
+            <div class="input-wrapper">
               <input class="p-1 mt-1" type="text" name="lastName" id="lastName" placeholder="Last Name " autocomplete="off">
+              <i id="lastNameErrIcon"></i>
               <small id="lastNameErr">Last Name cannot be empty</small>
+            </div>
+            <div class="input-wrapper">
               <input class="p-1 mt-1" type="email" name="email" id="email" placeholder="Email Address" autocomplete="off">
+              <i id="emailErrIcon"></i>
               <small id="emailErr">Looks like this is not an email</small>
+            </div>
+            <div class="input-wrapper">
               <input class="p-1 mt-1" type="password" name="password" id="password" placeholder="Password" autocomplete="off">
+              <i id="passwordErrIcon"></i>
               <small id="passwordErr">Password cannot be empty</small>
+            </div>
               <button class="p-1 mt-1" type="button" id="claimBtn">Claim your free trial</button>
               <p class="tnc-text mt-1">By clicking the button, you are agreeing to our <span class="tnc">Terms and
                   Services</span></p>

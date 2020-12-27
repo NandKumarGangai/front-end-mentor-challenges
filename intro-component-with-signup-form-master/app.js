@@ -20,26 +20,26 @@ claimBtn.addEventListener('click', () => {
 
     if(!firstName) {
         firstNameElement.classList.add('error');
-        const errorEle = document.getElementById('firstNameErr');
-        errorEle.classList.add('display-inline');
+        document.getElementById('firstNameErr').classList.add('display-inline');
+        document.getElementById('firstNameErrIcon').classList.add('error-icon');
     }
 
     if(!lastName) {
         lastNameElement.classList.add('error');
-        const errorEle = document.getElementById('lastNameErr');
-        errorEle.classList.add('display-inline');
+        document.getElementById('lastNameErr').classList.add('display-inline');
+        document.getElementById('lastNameErrIcon').classList.add('error-icon');
     }
 
     if(!email) {
         emailElement.classList.add('error');
-        const errorEle = document.getElementById('emailErr');
-        errorEle.classList.add('display-inline');
+        document.getElementById('emailErr').classList.add('display-inline');
+        document.getElementById('emailErrIcon').classList.add('error-icon');
     }
 
     if(!password) {
         passwordElement.classList.add('error');
-        const errorEle = document.getElementById('passwordErr');
-        errorEle.classList.add('display-inline');
+        document.getElementById('passwordErr').classList.add('display-inline');
+        document.getElementById('passwordErrIcon').classList.add('error-icon');
     }
 
     if (firstName && lastName && email && password ) {
@@ -56,6 +56,7 @@ const firstNameEventHandler = () => {
     if (firstNameElement.value && firstNameElement.classList.contains('error')) {
         firstNameElement.classList.remove('error');
         document.getElementById('firstNameErr').classList.remove('display-inline');
+        document.getElementById('firstNameErrIcon').classList.remove('error-icon');
     }
 };
 
@@ -63,6 +64,7 @@ const lastNameEventHandler = () => {
     if (lastNameElement.value && lastNameElement.classList.contains('error')) {
         lastNameElement.classList.remove('error');
         document.getElementById('lastNameErr').classList.remove('display-inline');
+        document.getElementById('lastNameErrIcon').classList.remove('error-icon');
     }
 };
 
@@ -70,6 +72,7 @@ const emailEventHandler = () => {
     if (emailElement.value && emailElement.classList.contains('error')) {
         emailElement.classList.remove('error');
         document.getElementById('emailErr').classList.remove('display-inline');
+        document.getElementById('emailErrIcon').classList.remove('error-icon');
     }
 };
 
@@ -77,6 +80,7 @@ const passwordEventHandler = () => {
     if (passwordElement.value && passwordElement.classList.contains('error')) {
         passwordElement.classList.remove('error');
         document.getElementById('passwordErr').classList.remove('display-inline');
+        document.getElementById('passwordErrIcon').classList.remove('error-icon');
     }
 };
 

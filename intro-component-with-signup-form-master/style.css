@@ -35,6 +35,17 @@ body {
     height: 100vh;
 }
 
+.error-icon {
+    background-image: url('./images/icon-error.svg');
+    background-repeat: no-repeat;
+    text-align: right;
+    height: 2rem;
+    width: 2rem;
+    position: absolute;
+    top: 2rem;
+    right: 0rem;
+}
+
 .wrapper {
     background-image: url('./images/bg-intro-desktop.png');
     background-color: var(--red);
@@ -90,7 +101,12 @@ body {
     padding: 2rem;
 }
 
+.input-wrapper {
+    position: relative;
+}
+
 .form-elements input {
+    width: 100%;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     border-radius: 5px;
