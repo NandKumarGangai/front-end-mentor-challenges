@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-family: 'Jura', sans-serif;
+
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+  background: #111;
+  color: #dfdfdf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  position: relative;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 4em;
+  letter-spacing: 4px;
+  overflow: hidden;
+  font-family: 'Jura', sans-serif;
+}
+
+.fa-snowflake {
+    color: #fff;
+	position: absolute;
+	top: -20px;
+	animation: fall linear forwards;
+}
+
+
+.countdown-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.time {
+	display: flex;
+	font-size: 1.2em;
+	flex-direction: column;
+	margin: 0 15px;
+}
+
+.time h1 {
+	margin-bottom: 0;
+}
+
+.time small {
+	color: #ccc;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#bye-text {
+    padding: 5rem;
+    border-radius: 10px;
+}
+
+#newYear-text {
+    font-weight: 900;
+    padding: 5rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transition: ease-in;
+}
+
+
+@keyframes fall {
+	to {
+		transform: translateY(105vh);
+	}
+}
